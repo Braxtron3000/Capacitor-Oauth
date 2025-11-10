@@ -8,4 +8,9 @@ public class Authenticator {
         Logger.info("Echo", value);
         return value;
     }
+
+    public String hello(String value) {
+        Logger.info("Echo", value);
+        return value;
+    }
 }
