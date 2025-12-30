@@ -1,6 +1,9 @@
 package com.braxtron.capacitor.oauth;
 
+import com.getcapacitor.JSObject;
 import com.getcapacitor.Logger;
+
+import kotlinx.serialization.json.JsonObject;
 
 public class Authenticator {
 
@@ -9,6 +12,10 @@ public class Authenticator {
         return value;
     }
 
+    public JSObject readSettings() {
+        var jsobject= new JSObject();
+        return jsobject;
+    }
     public String hello(String value) {
         Logger.info("Echo", value);
         return value;

@@ -12,4 +12,8 @@ export class AuthenticatorWeb extends WebPlugin implements AuthenticatorPlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  async readSettings(): Promise<{ email?: string; token?: string; name?: string; image?: string }> {
+    return {};
+  }
 }

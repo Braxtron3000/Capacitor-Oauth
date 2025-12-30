@@ -15,6 +15,7 @@ npx cap sync
 
 * [`echo(...)`](#echo)
 * [`hello(...)`](#hello)
+* [`readSettings()`](#readsettings)
 
 </docgen-index>
 
@@ -47,6 +48,17 @@ hello(options: { value: string; }) => Promise<{ value: string; }>
 | **`options`** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### readSettings()
+
+```typescript
+readSettings() => Promise<{ email?: string; token?: string; name?: string; image?: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ email?: string; token?: string; name?: string; image?: string; }&gt;</code>
 
 --------------------
 
